@@ -526,6 +526,33 @@ section .hero-subtitle {
     transform: translateY(-2px);
 }
 
+/* Responsive design */
+/* For tablets and smaller screens */
+@media (max-width: 900px) {
+  .contact-container-hero-content {
+    flex-direction: column; /* stack vertically */
+    align-items: center; /* center both avatar and text */
+    gap: 2rem; /* reduce spacing */
+    text-align: center;
+  }
+}
+
+/* For very small mobile screens */
+@media (max-width: 500px) {
+  .contact-container-hero-content {
+    gap: 1.2rem;
+  }
+
+  .hero-subtitle {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .connect-button {
+    min-width: 140px;
+    font-size: 13px;
+  }
+}
 
 
 /* Resume page*/
@@ -1233,4 +1260,5 @@ section .hero-subtitle {
                 width: 40px;
                 height: 30px;
             }
+
         }
