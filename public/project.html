@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Projects</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="logo_name">
+                Aurshitha Reddy
+            </div>
+
+            <!--<div class="menu-toggle" id="menu-toggle"> ☰</div> -->
+
+            <nav class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Lightbox Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <div class="nav-arrow prev">&#10094;</div>
+                <img class="modal-image" id="modalImg" src="" alt="">
+                <div class="nav-arrow next">&#10095;</div>
+                <div class="image-counter"><span id="currentIndex">1</span> of <span id="totalImages">5</span></div>
+                <div class="thumbnail-strip" id="thumbnailStrip"></div>
+            </div>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Projects Portfolio</h2>
+                <p>Explore my work and projects</p>
+            </div>
+            <ul class="projects-list">
+                <li><a href="#personal-portfolio" class="active"><i class="fas fa-briefcase"></i>Personal Portfolio</a></li>
+                <li><a href="#journo-chain" class="active"><i class="fas fa-link"></i>Journo Chain</a></li>
+                <li><a href="#acrylica"><i class="fas fa-paint-brush"></i>Acrylica</a></li>
+                <li><a href="#dairy-dreamers"><i class="fas fa-shopping-cart"></i>Dairy Dreamers</a></li>
+                <li><a href="#ai-summarizer"><i class="fas fa-robot"></i>AI Text Summarizer</a></li>
+                <li><a href="#customer-churn"><i class="fas fa-chart-line"></i>Customer Churn Analysis</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="section-header">
+                <h1>My Project Portfolio</h1>
+                <p>A collection of my recent work and projects with detailed descriptions, technology stacks, and key features.</p>
+            </div>
+
+            <!-- Personal Portfolio Project -->
+            <section id="personal-portfolio" class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h2 class="project-title">Personal Portfolio</h2>
+                        <div class="project-date"><i class="far fa-calendar-alt"></i>June 2025 - August 2025</div>
+                    </div>
+                    <a href="#" class="github-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-pill"><i class="fas fa-code"></i>HTML</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>CSS</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>JavaScript</span>
+                </div>
+
+                <h3 class="section-titlep">Project Preview</h3>
+                <div class="project-images">
+                    <div class="project-image" data-index="0" data-project="personal-portfolio">
+                        <img src="./images/P1_1.png" alt="Home Page">
+                        <div class="image-overlay">Home Page</div>
+                    </div>
+                    <div class="project-image" data-index="1" data-project="personal-portfolio">
+                        <img src="./images/P1_2.png" alt="About Page">
+                        <div class="image-overlay">About Page</div>
+                    </div>
+                    <div class="project-image" data-index="2" data-project="personal-portfolio">
+                        <img src="./images/P1_3.png" alt="Skills View">
+                        <div class="image-overlay">Skills View</div>
+                    </div>
+                    <div class="project-image" data-index="3" data-project="personal-portfolio">
+                        <img src="./images/P1_4.png" alt="Resume Page">
+                        <div class="image-overlay">Resume Page</div>
+                    </div>
+                    <div class="project-image" data-index="4" data-project="personal-portfolio">
+                        <img src="./images/P1_5.png" alt="Contact Page">
+                        <div class="image-overlay">Contact Page</div>
+                    </div>
+                    <div class="view-more">
+                        <button class="view-more-btn">
+                            <i class="fas fa-images"></i> View All 6 Images
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="section-titlep">Project Highlights</h3>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">A living canvas of my journey in tech — blending projects, skills, and creativity into one digital home</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Showcasing not just what I build, but why I build it</div>
+                    </div>
+                  <!--  <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Enables monitoring of internal content storage</div>
+                    </div> -->
+                </div>
+                
+                <h3 class="section-titlep">Description</h3>
+                <div class="project-description">
+                    <p>A sleek and intuitive portfolio showcasing my achievements, ongoing projects, and work in web development, AI, and machine learning. With a user-friendly design and organized content, it reflects my passion for technology and creativity, providing a seamless experience for visitors to explore my journey and skills.</p>
+                    
+                    <!--<p><strong>A week in Program Innovation:</strong> This project was developed during an intensive innovation program focusing on blockchain applications for content management and verification systems.</p> -->
+                </div>
+            </section>
+
+            <!-- Journo Chain Project -->
+            <section id="journo-chain" class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h2 class="project-title">Journo Chain</h2>
+                        <div class="project-date"><i class="far fa-calendar-alt"></i>Februray 2025 - May 2025</div>
+                    </div>
+                    <a href="#" class="github-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-pill"><i class="fas fa-code"></i>Ethereum</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>Solidity</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>Smart Contracts</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>MetaMask</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>React.js</span>
+                </div>
+
+                <h3 class="section-titlep">Project Preview</h3>
+                <div class="project-images">
+                    <div class="project-image" data-index="0" data-project="journo-chain">
+                        <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Journo Chain Dashboard">
+                        <div class="image-overlay">Dashboard View</div>
+                    </div>
+                    <div class="project-image" data-index="1" data-project="journo-chain">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Journo Chain Analytics">
+                        <div class="image-overlay">Analytics Page</div>
+                    </div>
+                    <div class="project-image" data-index="2" data-project="journo-chain">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwa90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Journo Chain Mobile View">
+                        <div class="image-overlay">Mobile View</div>
+                    </div>
+                    <div class="project-image" data-index="3" data-project="journo-chain">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Journo Chain Security Features">
+                        <div class="image-overlay">Security Features</div>
+                    </div>
+                    <div class="project-image" data-index="4" data-project="journo-chain">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Journo Chain Data Management">
+                        <div class="image-overlay">Data Management</div>
+                    </div>
+                    <div class="view-more">
+                        <button class="view-more-btn">
+                            <i class="fas fa-images"></i> View All 8 Images
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="section-titlep">Project Highlights</h3>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Blockchain-based platform ensuring transparent and tamper-proof journalism</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Integrated fact-checking tools to fight misinformation</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Designed a decentralized monetization system for fair rewards</div>
+                    </div>
+                </div>
+                
+                <h3 class="section-titlep">Description</h3>
+                <div class="project-description">
+                    <p>This blockchain-powered journalism platform ensures transparency, security, and integrity by preventing censorship, combating fake news, and enabling fair monetization with immutable content storage and fact-checking</p>
+                    
+                    <p><strong>A week in Program Innovation:</strong> The project was developed as a minor academic work with a focus on applying blockchain to address real-world challenges in journalism.</p>
+                </div>
+            </section>
+
+            <!-- Arcylica Project -->
+            <section id="acrylica" class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h2 class="project-title">Acrylica - Art Portfolio Website</h2>
+                        <div class="project-date"><i class="far fa-calendar-alt"></i>December 2024 - Februray 2025</div>
+                    </div>
+                    <a href="https://aurshitha.github.io/Acrylica-Art-Portfolio/" class="github-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                
+                <div class="tech-stack">
+                    <span class="tech-pill"><i class="fas fa-code"></i>HTML</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>CSS</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>JavaScript</span>
+                   <!-- <span class="tech-pill"><i class="fas fa-code"></i>Oracle</span> -->
+                </div>
+                
+                <h3 class="section-titlep">Project Preview</h3>
+                <div class="project-images">
+                    <div class="project-image" data-index="0" data-project="acrylica">
+                        <img src="./images/P3_1.png" alt="Work Page Design">
+                        <div class="image-overlay">Work Page Design</div>
+                    </div>
+                    <div class="project-image" data-index="1" data-project="acrylica">
+                        <img src="./images/P3_2.png" alt="Blog Page">
+                        <div class="image-overlay">Blog Page</div>
+                    </div>
+                    <div class="project-image" data-index="2" data-project="acrylica">
+                        <img src="./images/P3_3.png" alt="Arcylica Blogs/ Journal View">
+                        <div class="image-overlay">Arcylica Blogs/ Journal View </div>
+                    </div>
+                    <div class="project-image" data-index="3" data-project="acrylica">
+                        <img src="./images/P3_4.png" alt="Arcylica Info Page">
+                        <div class="image-overlay">Arcylica Info Page</div>
+                    </div>
+                    <div class="view-more">
+                        <button class="view-more-btn">
+                            <i class="fas fa-images"></i> View All 8 Images
+                        </button>
+                    </div>
+                </div>
+                
+                <h3 class="section-titlep">Project Highlights</h3>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Inspired by acrylic resolution with visually appealing interfaces</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Showcase and sell artworks through a minimalist portfolio</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Open to suggestions and improvements</div>
+                    </div>
+                </div>
+                
+                <h3 class="section-titlep">Overview</h3>
+                <div class="project-description">
+                    <p><strong>Acrylica:</strong> Acrylica is a modern and sleek art portfolio website inspired by acrylic aesthetics. It’s designed to showcase and sell artworks through a minimalist and visually appealing interface, built using HTML, CSS, and JavaScript.</p>
+                    
+                    <p>The project currently runs as a front-end site, and I’m actively developing the backend to transform it into a full-stack application ready for deployment.
+                        You can view the locally hosted version via GitHub or by clicking the icon above. I'm open to suggestions and improvements - feel free to share your feedback!</p>
+                </div>
+            </section>
+
+            <!-- Other project sections would follow the same pattern -->
+            
+            <!-- Dairy Dreamers Project -->
+            <section id="dairy-dreamers" class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h2 class="project-title">Dairy Dreamers</h2>
+                        <div class="project-date"><i class="far fa-calendar-alt"></i>January 2023 - April 2023</div>
+                    </div>
+                    <a href="https://github.com/aurshitha/Dairy-Dreams" class="github-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-pill"><i class="fas fa-code"></i>HTML</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>CSS</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>JavaScript</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>Oracle DB</span>
+                </div>
+
+                <h3 class="section-titlep">Project Preview</h3>
+                <div class="project-images">
+                    <div class="project-image" data-index="0" data-project="dairy-dreamers">
+                        <img src="./images/P4_1.png" alt="Homepage">
+                        <div class="image-overlay">Homepage</div>
+                    </div>
+                    <div class="project-image" data-index="1" data-project="dairy-dreamers">
+                        <img src="./images/P4_2.png" alt="Login Page">
+                        <div class="image-overlay">Login Page</div>
+                    </div>
+                    <div class="project-image" data-index="2" data-project="dairy-dreamers">
+                        <img src="./images/P4_3.png" alt="Blog Page">
+                        <div class="image-overlay">Blog Page</div>
+                    </div>
+                    <div class="project-image" data-index="3" data-project="dairy-dreamers">
+                        <img src="./images/P4_4.png" alt="Blog Page View">
+                        <div class="image-overlay">Blog Page View</div>
+                    </div>
+                    <div class="project-image" data-index="4" data-project="dairy-dreamers">
+                        <img src="./images/P4_5.png" alt="Product Page">
+                        <div class="image-overlay">Product Page</div>
+                    </div>
+                    <div class="view-more">
+                        <button class="view-more-btn">
+                            <i class="fas fa-images"></i> View All 6 Images
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="section-titlep">Project Highlights</h3>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Static e-commerce website for dairy products</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Features product browsing, authentication, and secure login</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Showcases a real-world use case of digitalizing local dairy businesses</div>
+                    </div>
+                </div>
+                
+                <h3 class="section-titlep">Description</h3>
+                <div class="project-description">
+                    <p>✨ Dairy Dreams is a static e-commerce website designed to facilitate the purchase of farm-fresh dairy products through a seamless online platform. Built using HTML, CSS, and JavaScript, the website features a clean, intuitive, and user-friendly interface that enhances the shopping experience.</p>
+                    <p> It includes essential functionalities such as product browsing, user authentication, and a secure login system, implemented using an Oracle database. The project focuses on delivering a visually appealing and efficient design while promoting access to high-quality dairy products.🚀</p>
+                    
+                  <!--  <p><strong>A week in Program Innovation:</strong> This project was developed during an intensive innovation program focusing on blockchain applications for content management and verification systems.</p> -->
+                </div>
+            </section>
+
+            <!-- AI Text Summarizer App -->
+            <section id="ai-summarizer" class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h2 class="project-title">AI Text Summarizer App</h2>
+                        <div class="project-date"><i class="far fa-calendar-alt"></i>May 2024 - June 2024</div>
+                    </div>
+                    <a href="https://github.com/aurshitha/AI-Text-Summarizer-App" class="github-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-pill"><i class="fas fa-code"></i>HTML</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>CSS</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>JavaScript</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>Postman API</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>Hugging Face</span>
+                </div>
+
+                <h3 class="section-titlep">Project Preview</h3>
+                <div class="project-images">
+                    <div class="project-image" data-index="0" data-project="ai-summarizer">
+                        <img src="./images/P5_1.png" alt="Journo Chain Dashboard">
+                        <div class="image-overlay">Front View</div>
+                    </div>
+                    <div class="project-image" data-index="1" data-project="ai-summarizer">
+                        <img src="./images/P5_2.png" alt="Journo Chain Analytics">
+                        <div class="image-overlay">AI Summarizer Section</div>
+                    </div>
+                    <div class="project-image" data-index="2" data-project="ai-summarizer">
+                        <img src="./images/P5_3.png" alt="Journo Chain Mobile View">
+                        <div class="image-overlay">View 3</div>
+                    </div>
+                    <!--<div class="project-image" data-index="3" data-project="ai-summarizer">
+                        <img src="" alt="Journo Chain Security Features">
+                        <div class="image-overlay">Security Features</div>
+                    </div>
+                    <div class="project-image" data-index="4" data-project="ai-summarizer">
+                        <img src="" alt="Journo Chain Data Management">
+                        <div class="image-overlay">Data Management</div>
+                    </div> -->
+                    <div class="view-more">
+                        <button class="view-more-btn">
+                            <i class="fas fa-images"></i> View All Images
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="section-titlep">Project Highlights</h3>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Generates concise summaries from large texts</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Developed as part of a Project-Based Learning module, focusing on API-driven applications.</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Learned and applied API requests, text processing, and real-world AI integration.</div>
+                    </div>
+                </div>
+                
+                <h3 class="section-titlep">Description</h3>
+                <div class="project-description">
+                    <p> AI Text Summarizer App is a simple yet powerful tool that generates concise summaries from long-form text using a language model API.
+                        Developed as part of a Project-Based Learning module with Postman, this app was built and tested in Replit using HTML, CSS, JavaScript, and API integration.</p>
+                        <p> The source code is available on GitHub, while the live working version can be accessed via Replit.</p>
+                    
+                    <p><strong>A week in Program Innovation:</strong> This project helped me understand the fundamentals of API requests, text processing, and how to integrate AI services into real-world applications🚀.</p>
+                </div>
+            </section>
+
+            <!-- Customer Churn EDA Analysis Project -->
+            <section id="customer-churn" class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h2 class="project-title">Customer Churn Analysis</h2>
+                        <div class="project-date"><i class="far fa-calendar-alt"></i>January 2023 - April 2023</div>
+                    </div>
+                    <a href="https://github.com/aurshitha/Customer-Churn-EDA-Analysis" class="github-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-pill"><i class="fas fa-code"></i>Python</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>Numpy</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>Pandas</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>Matplotlib</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>Seaborn</span>
+                </div>
+
+                <h3 class="section-titlep">Project Preview</h3>
+                <!--<div class="project-images">
+                    <div class="project-image" data-index="0" data-project="customer-churn">
+                        <img src="./images/P6_1.png" alt="Code View">
+                        <div class="image-overlay">Code View</div>
+                    </div>
+                    <div class="project-image" data-index="1" data-project="customer-churn">
+                        <img src="./images/P6_2.png" alt="Report View">
+                        <div class="image-overlay">Report View</div>
+                    </div>
+                    <div class="view-more">
+                        <button class="view-more-btn">
+                            <i class="fas fa-images"></i> View All Images
+                        </button>
+                    </div>
+                </div> -->
+
+                <h3 class="section-titlep">Project Highlights</h3>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Data-driven project analyzing customer churn patterns</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Exploratory and descriptive analysis on credit card customer dataset using EDA, visualization, and preprocessing techniques</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Identifies patterns, correlations, and key factors influencing churn for better retention strategies</div>
+                    </div>
+                </div>
+                
+                <h3 class="section-titlep">Description</h3>
+                <div class="project-description">
+                    <p>✨ Customer Churn EDA Analysis is a data-driven project aimed at understanding the factors that influence customer attrition in a business.
+                        Using Python, Pandas, Matplotlib, and Seaborn, I performed comprehensive exploratory data analysis to uncover patterns, correlations, and key drivers of churn.
+                    </p>
+                    <p>The project includes data cleaning, feature analysis, and visual insights, helping to inform potential strategies for improving customer retention.
+                    The full code and detailed visualizations are available on GitHub.</p>
+                </div>
+            </section>
+
+
+            <!-- Journo Chain Project -->
+            <!--<section id="journo-chain" class="project-card">
+                <div class="project-header">
+                    <div>
+                        <h2 class="project-title">Journo Chain</h2>
+                        <div class="project-date"><i class="far fa-calendar-alt"></i>January 2023 - Present</div>
+                    </div>
+                    <a href="#" class="github-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="tech-stack">
+                    <span class="tech-pill"><i class="fas fa-code"></i>Blockchain</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>React</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>Node.js</span>
+                    <span class="tech-pill"><i class="fas fa-code"></i>MongoDB</span>
+                </div>
+
+                <h3 class="section-titlep">Project Preview</h3>
+                <div class="project-images">
+                    <div class="project-image" data-index="0" data-project="journo-chain">
+                        <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Journo Chain Dashboard">
+                        <div class="image-overlay">Dashboard View</div>
+                    </div>
+                    <div class="project-image" data-index="1" data-project="journo-chain">
+                        <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Journo Chain Analytics">
+                        <div class="image-overlay">Analytics Page</div>
+                    </div>
+                    <div class="project-image" data-index="2" data-project="journo-chain">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwa90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Journo Chain Mobile View">
+                        <div class="image-overlay">Mobile View</div>
+                    </div>
+                    <div class="project-image" data-index="3" data-project="journo-chain">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Journo Chain Security Features">
+                        <div class="image-overlay">Security Features</div>
+                    </div>
+                    <div class="project-image" data-index="4" data-project="journo-chain">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Journo Chain Data Management">
+                        <div class="image-overlay">Data Management</div>
+                    </div>
+                    <div class="view-more">
+                        <button class="view-more-btn">
+                            <i class="fas fa-images"></i> View All 8 Images
+                        </button>
+                    </div>
+                </div>
+
+                <h3 class="section-titlep">Project Highlights</h3>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Blockchain-based platform ensuring transparency and security</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Provides knowledge, consulting data, and services</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-bullet"><i class="fas fa-circle"></i></div>
+                        <div class="highlight-text">Enables monitoring of internal content storage</div>
+                    </div>
+                </div>
+                
+                <h3 class="section-titlep">Description</h3>
+                <div class="project-description">
+                    <p>This blockchain-based (non-unit) platform ensures transparency, security, and integrity by providing knowledge, consulting data, services, and enabling the monitoring of internal/ide content storage and free checking.</p>
+                    
+                    <p><strong>A week in Program Innovation:</strong> This project was developed during an intensive innovation program focusing on blockchain applications for content management and verification systems.</p>
+                </div>
+            </section> -->
+
+
+
+            <!-- Footer with Contact -->
+            <footer id="contact">
+                <div class="container-footer">
+                    <div class="footer-bottom">
+                        <p>&copy; 2025 Aurshitha Reddy. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <script>
+            // Lightbox functionality
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImg");
+            const currentIndexSpan = document.getElementById("currentIndex");
+            const totalImagesSpan = document.getElementById("totalImages");
+            const closeBtn = document.querySelector(".close");
+            const prevBtn = document.querySelector(".prev");
+            const nextBtn = document.querySelector(".next");
+            const thumbnailStrip = document.getElementById("thumbnailStrip");
+            
+            // Store images by project
+            const projectImages = {
+                "personal-portfolio": [
+                    { src: "./images/P1_1.png", alt: "Home Page" },
+                    { src: "./images/P1_2.png", alt: "About Page" },
+                    { src: "./images/P1_3.png", alt: "Skills view" },
+                    { src: "./images/P1_4.png", alt: "Resume View" },
+                    { src: "./images/P1_5.png", alt: "Contact Page" },
+                    { src: "./images/P1_6.png", alt: "Projects Page View" },
+                
+                ],
+                "journo-chain": [
+                    { src: "./images/P2_1.png", alt: "Journo Chain Dashboard" },
+                    { src: "./images/P2_2.png", alt: "Journo Chain Analytics" },
+                    { src: "./images/P2_3.png", alt: "Journo Chain Mobile View" },
+                    { src: "./images/P2_4.png", alt: "Journo Chain Security Features" },
+                    { src: "./images/P2_5.png", alt: "Journo Chain Data Management" },
+                    { src: "./images/P2_6.png", alt: "Journo Chain User Profile" },
+                    { src: "./images/P2_7.png", alt: "Journo Chain Settings" },
+                    { src: "./images/P2_8.png", alt: "Journo Chain Admin Panel" }
+                ],
+                "acrylica": [
+                    { src: "./images/P3_1.png", alt: "Homepage - Works" },
+                    { src: "./images/P3_2.png", alt: "Blog Page" },
+                    { src: "./images/P3_3.png", alt: "Arcylica Blogs/ Journal View" },
+                    { src: "./images/P3_4.png", alt: "Arcylica Info Page" },
+                    { src: "./images/P3_5.png", alt: "Arcylica Shopping Page" },
+                    { src: "./images/P3_6_1.png", alt: "Arcylica About Page 1" },
+                    { src: "./images/P3_6_2.png", alt: "Arcylica About Page 2" },
+                    { src: "./images/P3_6_3.png", alt: "Arcylica About Page 3" }
+                ],
+                // Add other projects here...
+                "dairy-dreamers": [
+                    { src: "./images/P4_1.png", alt: "Homepage" },
+                    { src: "./images/P4_2.png", alt: "Login Page" },
+                    { src: "./images/P4_3.png", alt: "Blog Page" },
+                    { src: "./images/P4_4.png", alt: "Blog Page View" },
+                    { src: "./images/P4_5.png", alt: "Product Page" },
+                    { src: "./images/P4_6.png", alt: "About Us Page" }
+                ],
+                "ai-summarizer": [
+                    { src: "./images/P5_1.png", alt: "Front View" },
+                    { src: "./images/P5_2.png", alt: "AI Summarizer Section" },
+                    { src: "./images/P5_3.png", alt: "View 3" }
+                ]
+               /* "customer-churn": [
+                    { src: "./images/P6_1.png", alt: "Code View" },
+                    { src: "./images/P6_2.png", alt: "Report View" },
+                ] */
+            };
+            
+            let currentProject = "";
+            let currentImageIndex = 0;
+            
+            // Open modal when clicking on an image
+            document.querySelectorAll('.project-image').forEach(img => {
+                img.addEventListener('click', function() {
+                    currentProject = this.getAttribute('data-project');
+                    currentImageIndex = parseInt(this.getAttribute('data-index'));
+                    openModal();
+                });
+            });
+            
+            // Open modal when clicking "View All" button
+            document.querySelectorAll('.view-more-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const projectCard = this.closest('.project-card');
+                    const projectId = projectCard.getAttribute('id');
+                    currentProject = projectId;
+                    currentImageIndex = 0;
+                    openModal();
+                });
+            });
+            
+            // Open the modal
+            function openModal() {
+                updateModalImage();
+                createThumbnails();
+                modal.style.display = "block";
+                document.body.style.overflow = "hidden";
+            }
+            
+            // Close modal
+            closeBtn.addEventListener('click', function() {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            });
+            
+            // Navigate to previous image
+            prevBtn.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex - 1 + projectImages[currentProject].length) % projectImages[currentProject].length;
+                updateModalImage();
+                updateThumbnails();
+            });
+            
+            // Navigate to next image
+            nextBtn.addEventListener('click', function() {
+                currentImageIndex = (currentImageIndex + 1) % projectImages[currentProject].length;
+                updateModalImage();
+                updateThumbnails();
+            });
+            
+            // Close modal when clicking outside the image
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = "none";
+                    document.body.style.overflow = "auto";
+                }
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (modal.style.display === "block") {
+                    if (e.key === "Escape") {
+                        modal.style.display = "none";
+                        document.body.style.overflow = "auto";
+                    } else if (e.key === "ArrowLeft") {
+                        currentImageIndex = (currentImageIndex - 1 + projectImages[currentProject].length) % projectImages[currentProject].length;
+                        updateModalImage();
+                        updateThumbnails();
+                    } else if (e.key === "ArrowRight") {
+                        currentImageIndex = (currentImageIndex + 1) % projectImages[currentProject].length;
+                        updateModalImage();
+                        updateThumbnails();
+                    }
+                }
+            });
+            
+            // Update modal image
+            function updateModalImage() {
+                modalImg.src = projectImages[currentProject][currentImageIndex].src;
+                modalImg.alt = projectImages[currentProject][currentImageIndex].alt;
+                currentIndexSpan.textContent = currentImageIndex + 1;
+                totalImagesSpan.textContent = projectImages[currentProject].length;
+            }
+            
+            // Create thumbnails
+            function createThumbnails() {
+                thumbnailStrip.innerHTML = "";
+                projectImages[currentProject].forEach((img, index) => {
+                    const thumbnail = document.createElement('div');
+                    thumbnail.className = 'thumbnail' + (index === currentImageIndex ? ' active' : '');
+                    thumbnail.innerHTML = `<img src="${img.src}" alt="Thumbnail ${index + 1}">`;
+                    thumbnail.addEventListener('click', () => {
+                        currentImageIndex = index;
+                        updateModalImage();
+                        updateThumbnails();
+                    });
+                    thumbnailStrip.appendChild(thumbnail);
+                });
+            }
+            
+            // Update thumbnail active state
+            function updateThumbnails() {
+                document.querySelectorAll('.thumbnail').forEach((thumb, index) => {
+                    if (index === currentImageIndex) {
+                        thumb.classList.add('active');
+                    } else {
+                        thumb.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('.projects-list a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 30,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active class
+                    document.querySelectorAll('.projects-list a').forEach(a => {
+                        a.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+            });
+            
+            // Update active link on scroll
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.projects-list a');
+                
+                let currentSection = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (pageYOffset >= sectionTop - 100) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === currentSection) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

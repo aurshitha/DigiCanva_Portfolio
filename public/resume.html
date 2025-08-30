@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Resume</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="logo_name">
+                Aurshitha Reddy
+            </div>
+
+            <!--<div class="menu-toggle" id="menu-toggle"> ☰</div> -->
+
+            <nav class="nav-links">
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+      <!--  <div class="pdf-container">
+            <iframe src="/docs/RAurshithaReddy_Resume (1).pdf class="resume-pdf-viewer" style="width: 1000px; height: 1500px; margin-left: 450px;"></iframe>
+        </div>
+    -->
+
+     <div class="main-container">
+        <h1 class="page-title">My Resume</h1>
+        
+        <div class="download-section">
+            <a href="./docs/my_resume.pdf" class="download-btn" download>Download here -> 
+                <i class="fas fa-download"></i>
+            </a>
+        </div>
+
+        <div class="pdf-container">
+            <!-- Update the PDF path to the correct location in your docs folder -->
+            <iframe src="./docs/my_resume.pdf" class="resume-pdf-viewer" style="width: 100%; height: 1000px;"></iframe>
+            <!-- https://drive.google.com/file/d/1d4iwlrg4JN4qyZBYugHSrh1REWP3_IeH/view  -->
+        </div>
+
+        <!-- Fallback message in case the PDF doesn't load -->
+        <div class="pdf-fallback" style="display: none;">
+            <h3>Resume Preview Not Available</h3>
+            <p>If the resume preview isn't loading, you can still download it using the button above.</p>
+            <a href="./docs/my_resume.pdf" class="download-btn" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </div>
+    
+    <!-- Footer with Contact -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aurshitha Reddy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pdfViewer = document.querySelector('.resume-pdf-viewer');
+            const fallback = document.querySelector('.pdf-fallback');
+            
+            // Check if PDF loaded successfully (after a delay)
+            setTimeout(function() {
+                try {
+                    // Try to detect if PDF failed to load
+                    if (pdfViewer.contentDocument.body.innerHTML === "" || 
+                        pdfViewer.contentDocument.body.innerHTML.includes('failed')) {
+                        fallback.style.display = 'block';
+                    }
+                } catch (e) {
+                    // If there's an error accessing the iframe content, show fallback
+                    fallback.style.display = 'block';
+                }
+            }, 3000);
+            
+            // Add animation to download button on page load
+            const downloadBtn = document.querySelector('.download-btn');
+            downloadBtn.style.opacity = '0';
+            downloadBtn.style.transform = 'translateY(20px)';
+            
+            setTimeout(function() {
+                downloadBtn.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                downloadBtn.style.opacity = '1';
+                downloadBtn.style.transform = 'translateY(0)';
+            }, 500);
+        });
+    </script>
+    
+    </body>
+</html>
